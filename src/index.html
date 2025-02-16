@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link
+      href="./output.css"
+      rel="stylesheet"
+    />
+    <title>Lupix</title>
+  </head>
+  <body class="bg-black text-white">
+    <!--Section-1-->
+    <!--Navigation bar-->
+    <div>
+      <nav class="m-5 flex justify-between items-center">
+        <img
+          src="../static/images/logo/logo.png"
+          alt="Lupix"
+          class="w-20 h-20 sm:w-20 sm:h-20 md:w-32 md:h-32"
+        />
+        <div class="flex items-center gap-x-10">
+          <ul class="hidden md:flex gap-x-5">
+            <li
+              class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] hover:cursor-pointer"
+            >
+              Process
+            </li>
+            <li
+              class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] hover:cursor-pointer"
+            >
+              Benefits
+            </li>
+            <li
+              class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] hover:cursor-pointer"
+            >
+              Services
+            </li>
+            <li
+              class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] hover:cursor-pointer"
+            >
+              Porifolio
+            </li>
+            <li
+              class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] hover:cursor-pointer"
+            >
+              FAQ
+            </li>
+          </ul>
+          <button
+            class="hidden md:block p-3 bg-[#D45D01] rounded-2xl text-xl text-black hover:text-white cursor-pointer"
+          >
+            Get Started
+          </button>
+
+          <button
+            class="md:hidden text-[#D45D01] p-1 text-xs relative sm:text-lg hover:cursor-pointer hover:text-white"
+            onclick="navBarClick()"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- mobile view of nagivation bar-->
+      <div
+        class="md:hidden hidden flex-col absolute right-0 top-20 items-center bg-black text-white p-5"
+        id="navBar"
+      >
+        <ul class="space-y-8">
+          <li
+            class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] cursor-pointer"
+          >
+            Process
+          </li>
+          <li
+            class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] cursor-pointer"
+          >
+            Benefits
+          </li>
+          <li
+            class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] cursor-pointer"
+          >
+            Services
+          </li>
+          <li
+            class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] cursor-pointer"
+          >
+            Porifolio
+          </li>
+          <li
+            class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] cursor-pointer"
+          >
+            FAQ
+          </li>
+        </ul>
+      </div>
+
+      <!--Heading section-1 -->
+      <div class="text-center text-white m-4 sm:m-6 md:m-8 p-6 sm:p-8 md:p-12">
+        <p
+          class="mt-4 sm:mt-6 md:mt-8 m-2 p-2 text-lg sm:text-4xl md:text-7xl max-w-[90%] sm:max-w-3xl mx-auto"
+        >
+          Leading The Pack In Digital Solution
+        </p>
+
+        <p
+          class="mt-4 sm:mt-6 md:mt-8 m-2 p-2 text-sm sm:text-base md:text-xl max-w-[90%] sm:max-w-3xl mx-auto"
+        >
+          At LUPIX, we don’t just create websites; we craft digital experiences
+          that convert. With our expertise in web development, social media
+          management, and ad campaign optimization, we empower your brand to
+          thrive in today’s competitive landscape.
+        </p>
+
+        <button
+          class="mt-6 sm:mt-8 md:mt-10 px-6 py-3 sm:px-8 sm:py-4 bg-[#D45D01] rounded-2xl text-xs sm:text-base md:text-lg text-black hover:text-white cursor-pointer"
+        >
+          Book A Meeting
+        </button>
+
+        <div
+          class="mt-12 flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 md:gap-6 w-full text-center"
+        >
+          <div class="bg-[#D45D01] w-8 sm:w-10 md:w-12 h-1"></div>
+          <span class="text-sm sm:text-base md:text-lg font-semibold"
+            >TRUSTED BY AMAZING BRANDS</span
+          >
+          <div class="bg-[#D45D01] w-8 sm:w-10 md:w-12 h-1"></div>
+        </div>
+      </div>
+
+      <!--Brands-->
+      <div
+        class="md:bg-[#222222] m-6 sm:m-10 p-6 sm:p-10 bg-black md:rounded-2xl"
+      >
+        <ul
+          class="block md:flex justify-center md:justify-between items-center gap-4 space-y-10 md:space-y-0"
+        >
+          <li
+            class="flex justify-center items-center text-white gap-2 w-full md:w-auto"
+          >
+            <img
+              src="../static/images/brands/layers.png"
+              class="w-5 sm:w-8 md:w-10"
+            />
+            <p class="text-sm sm:text-base md:text-lg">Layers</p>
+          </li>
+          <li
+            class="flex justify-center items-center text-white gap-2 w-full md:w-auto"
+          >
+            <img
+              src="../static/images/brands/quotient.png"
+              class="w-5 sm:w-8 md:w-10"
+            />
+            <p class="text-sm sm:text-base md:text-lg">Quotient</p>
+          </li>
+          <li
+            class="flex justify-center items-center text-white gap-2 w-full md:w-auto"
+          >
+            <img
+              src="../static/images/brands/circooles.png"
+              class="w-5 sm:w-8 md:w-10"
+            />
+            <p class="text-sm sm:text-base md:text-lg">Circooles</p>
+          </li>
+          <li
+            class="flex justify-center items-center text-white gap-2 w-full md:w-auto"
+          >
+            <img
+              src="../static/images/brands/hourglass.png"
+              class="w-5 sm:w-8 md:w-10"
+            />
+            <p class="text-sm sm:text-base md:text-lg">Hourglass</p>
+          </li>
+          <li
+            class="flex justify-center items-center text-white gap-2 w-full md:w-auto"
+          >
+            <img
+              src="../static/images/brands/commandR.png"
+              class="w-5 sm:w-8 md:w-10"
+            />
+            <p class="text-sm sm:text-base md:text-lg">Command+R</p>
+          </li>
+        </ul>
+      </div>
+
+      <!--Description-1 -->
+      <div class="text-white m-6 sm:m-10 p-3 sm:p-5">
+        <p class="text-[#D45D01] font-medium text-sm sm:text-lg md:text-xl">
+          HOW WE WORK
+        </p>
+        <div class="block md:flex md:gap-x-5 mt-4">
+          <p
+            class="text-xl sm:text-2xl md:text-4xl font-extrabold mb-4 md:mb-0"
+          >
+            Get a dedicated design team at fraction of the cost.
+          </p>
+          <p class="text-sm sm:text-lg md:text-xl">
+            Grow Your Business with Tailored Digital Marketing Solutions. Boost
+            your online presence with customized strategies crafted by
+            experienced professionals. Partner with LUPIX and unlock unlimited
+            possibilities for your brand’s growth — no limits, no hassle.
+          </p>
+        </div>
+        <button
+          class="mt-6 sm:mt-8 md:mt-10 px-6 py-3 sm:px-8 sm:py-4 bg-[#D45D01] rounded-2xl text-xs sm:text-base md:text-lg text-black hover:text-white cursor-pointer"
+        >
+          See Pricing
+        </button>
+      </div>
+
+      <!--Description-2-->
+      <div class="m-6 sm:m-10 p-3 sm:p-5">
+        <ul
+          class="block md:flex md:justify-center md:gap-5 space-y-10 md:space-y-0"
+        >
+          <li>
+            <img
+              src="../static/images/features/discover.png"
+              class="w-8 sm:w-10 md:w-12 bg-[#D45D01] border-8 border-[#D45D01] rounded-full"
+            />
+            <h5 class="mt-4 md:mt-6 text-sm sm:text-base md:text-lg">
+              Discover
+            </h5>
+            <p class="mt-4 md:mt-6 text-xs sm:text-sm md:text-base">
+              We dive deep into understanding your goals, audience, and
+              challenges.
+            </p>
+          </li>
+          <li>
+            <img
+              src="../static/images/features/strategize.png"
+              class="w-8 sm:w-10 md:w-12 bg-[#D45D01] border-8 border-[#D45D01] rounded-full"
+            />
+            <h5 class="mt-4 md:mt-6 text-sm sm:text-base md:text-lg">
+              Strategize
+            </h5>
+            <p class="mt-4 md:mt-6 text-xs sm:text-sm md:text-base">
+              We craft a custom plan to align your brand with market
+              opportunities.
+            </p>
+          </li>
+          <li>
+            <img
+              src="../static/images/features/create.png"
+              class="w-8 sm:w-10 md:w-12 bg-[#D45D01] border-8 border-[#D45D01] rounded-full"
+            />
+            <h5 class="mt-4 md:mt-6 text-sm sm:text-base md:text-lg">Create</h5>
+            <p class="mt-4 md:mt-6 text-xs sm:text-sm md:text-base">
+              Our team designs and develops innovative digital solutions that
+              resonate.
+            </p>
+          </li>
+          <li>
+            <img
+              src="../static/images/features/launch.png"
+              class="w-8 sm:w-10 md:w-12 bg-[#D45D01] border-8 border-[#D45D01] rounded-full"
+            />
+            <h5 class="mt-4 md:mt-6 text-sm sm:text-base md:text-lg">Lauch</h5>
+            <p class="mt-4 md:mt-6 text-xs sm:text-sm md:text-base">
+              We execute with precision, ensuring a seamless and impactful
+              rollout.
+            </p>
+          </li>
+          <li>
+            <img
+              src="../static/images/features/optimize.png"
+              class="w-8 sm:w-10 md:w-12 bg-[#D45D01] border-8 border-[#D45D01] rounded-full"
+            />
+            <h5 class="mt-4 md:mt-6 text-sm sm:text-base md:text-lg">
+              Optimize
+            </h5>
+            <p class="mt-4 md:mt-6 text-xs sm:text-sm md:text-base">
+              We analyze and refine for continuous improvement and long-term
+              success.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Section-2-->
+    <div class="bg-white text-center">
+      <div class="m-6 md:m-10 p-6 md:p-10">
+        <p class="text-black font-bold text-xl sm:text-2xl md:text-4xl">
+          Our Beautiful Works
+        </p>
+        <p class="text-black text-base sm:text-lg md:text-xl mt-5">
+          We help our clients grow their bottom-line with clear and professional
+          websites.
+        </p>
+      </div>
+    </div>
+
+    <!--Section-3-->
+    <div class="m-6 md:m-10 p-6 md:p-10">
+      <div class="text-center">
+        <p class="text-[#D45D01] text-base sm:text-lg md:text-xl">
+          OUR CAPABILITIES
+        </p>
+        <p class="text-white text-xl sm:text-2xl md:text-4xl mt-5 font-bold">
+          We can help you with...
+        </p>
+      </div>
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-12 text-center items-center"
+      >
+        <div
+          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
+        >
+          Web design & UI
+        </div>
+        <div
+          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
+        >
+          Social media visuals
+        </div>
+        <div
+          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
+        >
+          Infographics
+        </div>
+        <div
+          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
+        >
+          Design system
+        </div>
+        <div
+          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
+        >
+          Email design
+        </div>
+        <div
+          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
+        >
+          Stationary
+        </div>
+        <div
+          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
+        >
+          Icons
+        </div>
+        <div
+          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
+        >
+          Packaging & merch
+        </div>
+        <div
+          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
+        >
+          Signage
+        </div>
+        <div
+          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
+        >
+          Brochures
+        </div>
+        <div
+          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
+        >
+          Logo & Branding
+        </div>
+        <div
+          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
+        >
+          Digital ads
+        </div>
+        <div
+          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
+        >
+          Wireframes
+        </div>
+      </div>
+
+      <!--Description-1-->
+      <div>
+        <p class="text-[#D45D01] mt-20 text-base sm:text-lg md:text-xl">
+          BENEFITS
+        </p>
+        <div
+          class="text-white mt-10 block md:flex space-y-5 md:space-y-0 md:gap-6"
+        >
+          <p class="text-xl sm:text-2xl md:text-4xl">
+            The design subscription that connects you to your dream team
+          </p>
+          <p class="text-base sm:text-lg md:text-xl">
+            A subscription can alleviate the stress of staffing, managing
+            expenses, or make design calls like a Creative Director. We partner
+            with you to ensure that your design elevates your brand to new
+            levels.
+          </p>
+        </div>
+        <button
+          class="mt-6 sm:mt-8 md:mt-10 px-6 py-3 sm:px-8 sm:py-4 bg-[#D45D01] rounded-2xl text-xs sm:text-base md:text-lg text-black hover:text-white cursor-pointer"
+        >
+          See Pricing
+        </button>
+      </div>
+
+      <!--Benefits-section-->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mt-20">
+        <div class="text-white space-y-4">
+          <p class="text-[#D45D01] text-base sm:text-lg md:text-xl">
+            <i class="fa-solid fa-infinity"></i>
+          </p>
+          <h5 class="text-base sm:text-lg md:text-xl">1. On-demand requests</h5>
+          <p class="text-xs sm:text-sm md:text-base">
+            Put all your requests in the design queue in Trello, and we’ll knock
+            them out 1 by 1.
+          </p>
+        </div>
+        <div class="text-white space-y-4 mt-10 md:mt-0">
+          <p class="text-[#D45D01] text-base sm:text-lg md:text-xl">
+            <i class="fas fa-bolt"></i>
+          </p>
+          <h5 class="text-base sm:text-lg md:text-xl">2. Top-notch quality</h5>
+          <p class="text-xs sm:text-sm md:text-base">
+            High-end work from a dedicated team of senior designers that's
+            always available when you need it.
+          </p>
+        </div>
+        <div class="text-white space-y-4 mt-10 md:mt-0">
+          <p class="text-[#D45D01] text-base sm:text-lg md:text-xl">
+            <i class="fab fa-weebly"></i>
+          </p>
+          <h5 class="text-base sm:text-lg md:text-xl">3. Powered by-Webflow</h5>
+          <p class="text-xs sm:text-sm md:text-base">
+            We build every site on Webflow, making them dynamic, accessible, and
+            easily scalable. It’s easy for you like Squarespace but better.
+          </p>
+        </div>
+        <div class="text-white space-y-4 mt-10 md:mt-0">
+          <p class="text-[#D45D01] text-base sm:text-lg md:text-xl">
+            <i class="fas fa-desktop"></i>
+          </p>
+          <h5 class="text-base sm:text-lg md:text-xl">
+            4. Fast,Responsive,Reliable
+          </h5>
+          <p class="text-xs sm:text-sm md:text-base">
+            Get regular updates on your projects and can expect to receive your
+            designs within 2-3 days.
+          </p>
+        </div>
+        <div class="text-white space-y-4 mt-10 md:mt-0">
+          <p class="text-[#D45D01] text-base sm:text-lg md:text-xl">
+            <i class="fas fa-calendar"></i>
+          </p>
+          <h5 class="text-base sm:text-lg md:text-xl">
+            5. No Lock in contracts
+          </h5>
+          <p class="text-xs sm:text-sm md:text-base">
+            Pay the same every month, no surprises. You can use it for as long
+            as you want and cancel anytime.
+          </p>
+        </div>
+        <div class="text-white space-y-4 mt-10 md:mt-0">
+          <p class="text-[#D45D01] text-base sm:text-lg md:text-xl">
+            <i class="fas fa-coins"></i>
+          </p>
+          <h5 class="text-base sm:text-lg md:text-xl">
+            6. Great Value for money
+          </h5>
+          <p class="text-xs sm:text-sm md:text-base">
+            Get the power of dedicated design team at fraction of the cost of
+            full-time employee. ($54k/yr vs. $112k/yr).
+          </p>
+        </div>
+        <div class="text-white space-y-4 mt-10 md:mt-0">
+          <p class="text-[#D45D01] text-base sm:text-lg md:text-xl">
+            <i class="fas fa-cog"></i>
+          </p>
+          <h5 class="text-base sm:text-lg md:text-xl">7. Customized for you</h5>
+          <p class="text-xs sm:text-sm md:text-base">
+            We design and build custom for you. We’re never starting from a
+            template unless you want that? You don't, right?
+          </p>
+        </div>
+        <div class="text-white space-y-4 mt-10 md:mt-0">
+          <p class="text-[#D45D01] text-base sm:text-lg md:text-xl">
+            <i class="fas fa-cash-register"></i>
+          </p>
+          <h5 class="text-base sm:text-lg md:text-xl">8. Creative paying</h5>
+          <p class="text-xs sm:text-sm md:text-base">
+            We’re here when you need us and not on payroll when you don’t.
+          </p>
+        </div>
+        <div class="text-white space-y-4 mt-10 md:mt-0">
+          <p class="text-[#D45D01] text-base sm:text-lg md:text-xl">
+            <i class="fas fa-briefcase"></i>
+          </p>
+          <h5 class="text-base sm:text-lg md:text-xl">9. Expert Turnover</h5>
+          <p class="text-xs sm:text-sm md:text-base">
+            You’re getting 10+ years of design experience with every request. No
+            hand-holding required.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Section-4-->
+    <div class="bg-white">
+      <div class="m-6 md:m-10 p-6 md:p-10">
+        <div class="text-center text-black mt-10 space-y-10">
+          <p class="text-base sm:text-lg md:text-xl">TESTIMONIAL</p>
+          <p class="text-xl sm:text-3xl md:text-5xl">
+            Customer is Our Top Priority
+          </p>
+          <p class="text-sm sm:text-base md:text-lg">
+            We survey all of our clients,the results of which go directly to our
+            CEO.
+          </p>
+        </div>
+      </div>
+
+      <!--Carousel-->
+      <div class="relative w-full text-black">
+        <div class="m-12 md:m-20 p-6 md:p-10">
+          <div
+            class="relative h-52 sm:h-64 flex justify-center items-center overflow-scroll rounded-lg"
+          >
+            <div
+              class="carousel-item absolute inset-0 flex flex-col sm:flex-row items-center justify-center text-left opacity-100 transition-opacity duration-700"
+            >
+              <div
+                class="flex flex-col sm:flex-row items-center sm:space-x-6 bg-white p-4 sm:p-6 rounded-lg shadow-lg space-y-4"
+              >
+                <img
+                  src="../static/images/carousel/20180125_001_1_.jpg"
+                  class="w-12 sm:w-32 md:w-40 lg:w-48 rounded-full mt-3 sm:mt-0"
+                />
+                <div class="max-w-2xs sm:max-w-sm md:max-w-lg space-y-4">
+                  <h1 class="text-lg sm:text-xl font-bold">Heading1</h1>
+                  <p class="text-xs sm:text-sm md:text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Velit modi dolore quae molestiae aliquid dolorum in, natus
+                    aspernatur architecto ullam?
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="carousel-item absolute inset-0 flex flex-col sm:flex-row items-center justify-center text-left opacity-100 transition-opacity duration-700"
+            >
+              <div
+                class="flex flex-col sm:flex-row items-center sm:space-x-6 bg-white p-4 sm:p-6 rounded-lg shadow-lg space-y-4"
+              >
+                <img
+                  src="../static/images/carousel/20180125_001_1_.jpg"
+                  class="w-12 sm:w-32 md:w-40 lg:w-48 rounded-full mt-3 sm:mt-0"
+                />
+                <div class="max-w-2xs sm:max-w-sm md:max-w-lg space-y-4">
+                  <h1 class="text-lg sm:text-xl font-bold">Heading2</h1>
+                  <p class="text-xs sm:text-sm md:text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Velit modi dolore quae molestiae aliquid dolorum in, natus
+                    aspernatur architecto ullam?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button
+            id="prev"
+            class="absolute top-1/2 left-2 sm:left-4 transform -translate-y-1/2 text-lg sm:text-2xl text-black bg-white p-2 sm:p-3 rounded-full shadow-md w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center"
+          >
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button
+            id="next"
+            class="absolute top-1/2 right-2 sm:right-4 transform -translate-y-1/2 text-lg sm:text-2xl text-black bg-white p-2 sm:p-3 rounded-full shadow-md w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center"
+          >
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--Section-5-->
+    <div>
+      <!--Heading-->
+      <div class="m-6 md:m-10 p-6 md:p-10">
+        <div class="text-center space-y-8">
+          <p class="text-[#D45D01] text-sm sm:text-base md:text-lg">
+            CLEAR & SIMPLE PRICING
+          </p>
+          <p class="text-2xl sm:text-3xl md:text-4xl font-bold">
+            Simple pricing to level up your brand.
+          </p>
+          <p class="text-sm sm:text-base md:text-lg">
+            Senior experts. On-demand requests. Fast turnarounds. Flat monthly
+            fee. Cancel anytime.
+          </p>
+        </div>
+      </div>
+
+      <!--Pricing Panel-->
+      <div class="m-6 md:m-10 p-6 md:p-10">
+        <div
+          class="flex flex-col md:flex-row space-y-6 md:space-x-3 md:space-y-0"
+        >
+          <!--Element-1-->
+          <div
+            class="bg-[#222222] p-1 md:p-2 rounded-2xl border-2 border-[#D45D01] space-y-8"
+          >
+            <div class="flex justify-between items-center space-x-1 mt-6">
+              <p class="text-sm sm:text-base md:text-lg font-bold">Standard</p>
+              <p class="bg-[#D45D01] p-0.5 rounded-lg text-black text-xs">
+                Most Popular
+              </p>
+            </div>
+            <p class="text-xs md:text-sm">
+              One request at a time.For companies who need on-going design
+              support.
+            </p>
+            <hr class="text-[#D45D01]" />
+            <div class="space-y-2">
+              <p class="text-[#D45D01] text-xl sm:text-2xl md:text-4xl">
+                $2,995/m
+              </p>
+              <p class="text-xs md:text-sm">Pause or cancel anytime</p>
+            </div>
+            <hr class="text-[#D45D01]" />
+            <div class="space-y-3">
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">1x active task at a time</p>
+              </div>
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">Unlimited revisions</p>
+              </div>
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">Dedicated project manager</p>
+              </div>
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">Daily comms through Slack</p>
+              </div>
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">Work with senior designers</p>
+              </div>
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">2-3 days turn around time</p>
+              </div>
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">Top tier design</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col space-y-4">
+              <button
+                class="px-6 py-3 sm:px-8 sm:py-4 rounded-xl border-2 border-[#D45D01] text-xs sm:text-base md:text-lg hover:text-[#D45D01] cursor-pointer"
+              >
+                Book a call
+              </button>
+              <button
+                class="px-6 py-3 sm:px-8 sm:py-4 rounded-xl bg-[#D45D01] text-black text-xs sm:text-base md:text-lg hover:text-white cursor-pointer"
+              >
+                Click to buy
+              </button>
+            </div>
+          </div>
+
+          <!--Element-2-->
+          <div
+            class="bg-[#222222] p-2 md:p-4 rounded-2xl border-2 border-[#D45D01] space-y-8"
+          >
+            <div class="flex justify-between items-center space-x-1 mt-6">
+              <p class="text-sm sm:text-base md:text-lg font-bold">Growth</p>
+              <p class="bg-white p-0.5 rounded-lg text-black text-xs">
+                Best Value
+              </p>
+            </div>
+            <p class="text-xs md:text-sm">
+              Double the requests.For companies with increasing design
+              needs.Limited spots.
+            </p>
+            <hr class="text-[#D45D01]" />
+            <div class="space-y-2">
+              <p class="text-[#D45D01] text-xl sm:text-2xl md:text-4xl">
+                $4,795/m
+              </p>
+              <p class="text-xs md:text-sm">Pause or cancel anytime</p>
+            </div>
+            <hr class="text-[#D45D01]" />
+            <div class="space-y-3">
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">2x active task at a time</p>
+              </div>
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">Unlimited revisions</p>
+              </div>
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">Dedicated project manager</p>
+              </div>
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">Daily comms through Slack</p>
+              </div>
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">Work with senior designers</p>
+              </div>
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">2-3 days turn around time</p>
+              </div>
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">Top tier design</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col space-y-4">
+              <button
+                class="px-6 py-3 sm:px-8 sm:py-4 rounded-xl border-2 border-[#D45D01] text-xs sm:text-base md:text-lg hover:text-[#D45D01] cursor-pointer"
+              >
+                Book a call
+              </button>
+              <button
+                class="px-6 py-3 sm:px-8 sm:py-4 rounded-xl bg-[#D45D01] text-black text-xs sm:text-base md:text-lg hover:text-white cursor-pointer"
+              >
+                Click to buy
+              </button>
+            </div>
+          </div>
+
+          <!--Element-3-->
+          <div
+            class="bg-[#222222] p-2 md:p-4 rounded-2xl border-2 border-[#D45D01] space-y-8"
+          >
+            <div class="mt-6">
+              <p class="text-sm sm:text-base md:text-lg font-bold">
+                Basic-weekly
+              </p>
+            </div>
+            <p class="text-xs md:text-sm">
+              Perfect if you want to try the subscription out or only have a few
+              one-off tasks.
+            </p>
+            <hr class="text-[#D45D01]" />
+            <div class="space-y-2">
+              <p class="text-[#D45D01] text-xl sm:text-2xl md:text-4xl">
+                $890/m
+              </p>
+              <p class="text-xs md:text-sm">Paid per weekly</p>
+            </div>
+            <hr class="text-[#D45D01]" />
+            <div class="space-y-3">
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">Fixed Scope of work</p>
+              </div>
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">2 rounds of revisions</p>
+              </div>
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">Dedicated project manager</p>
+              </div>
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">Daily comms through Slack</p>
+              </div>
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">1x designer</p>
+              </div>
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">2-5 days turn around time</p>
+              </div>
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa fa-star text-[#D45D01] text-xs md:text-sm"></i>
+                <p class="text-xs md:text-sm">Top tier design</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col space-y-4">
+              <button
+                class="px-6 py-3 sm:px-8 sm:py-4 rounded-xl border-2 border-[#D45D01] text-xs sm:text-base md:text-lg hover:text-[#D45D01] cursor-pointer"
+              >
+                Book a call
+              </button>
+              <button
+                class="px-6 py-3 sm:px-8 sm:py-4 rounded-xl bg-[#D45D01] text-black text-xs sm:text-base md:text-lg hover:text-white cursor-pointer"
+              >
+                Click to buy
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--News Blogs-->
+      <div>
+        <div class="m-6 md:m-10 p-6 md:p-10 text-center space-y-4">
+          <p class="text-[#D45D01] text-sm sm:text-base md:text-lg">BLOGS</p>
+          <p class="text-xl sm:text-2xl md:text-4xl font-bold">
+            News & Articles
+          </p>
+          <p class="text-sm sm:text-base md:text-lg">
+            Best Articles to get started
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-2 m-6 md:m-10 p-6 md:p-10"
+        >
+          <div
+            class="flex flex-row space-x-1 border-2 border-[#D45D01] rounded-xl"
+          >
+            <img
+              src="../static/images/news/n1.png"
+              class="w-14 sm:w-20 md:w-32 h-auto object-cover"
+            />
+            <div class="text-left m-1 p-1 sm:space-y-2">
+              <h1 class="text-[#D45D01] text-[8px] sm:text-xs md:text-sm">
+                Branding
+              </h1>
+              <p class="font-bold text-[10px] sm:text-xs md:text-base">
+                What is branding and why do we need it?
+              </p>
+              <p class="text-[8px] sm:text-xs">
+                On the other hand, we denounce with righteous indignation and...
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-row space-x-1 border-2 border-[#D45D01] rounded-xl"
+          >
+            <img
+              src="../static/images/news/n1.png"
+              class="w-14 sm:w-20 md:w-32 h-auto object-cover"
+            />
+            <div class="text-left m-1 p-1 sm:space-y-2">
+              <h1 class="text-[#D45D01] text-[8px] sm:text-xs md:text-sm">
+                Branding
+              </h1>
+              <p class="font-bold text-[10px] sm:text-xs md:text-base">
+                What is branding and why do we need it?
+              </p>
+              <p class="text-[8px] sm:text-xs">
+                On the other hand, we denounce with righteous indignation and...
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-row space-x-1 border-2 border-[#D45D01] rounded-xl"
+          >
+            <img
+              src="../static/images/news/n1.png"
+              class="w-14 sm:w-20 md:w-32 h-auto object-cover"
+            />
+            <div class="text-left m-1 p-1 sm:space-y-2">
+              <h1 class="text-[#D45D01] text-[8px] sm:text-xs md:text-sm">
+                Branding
+              </h1>
+              <p class="font-bold text-[10px] sm:text-xs md:text-base">
+                What is branding and why do we need it?
+              </p>
+              <p class="text-[8px] sm:text-xs">
+                On the other hand, we denounce with righteous indignation and...
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-row space-x-1 border-2 border-[#D45D01] rounded-xl"
+          >
+            <img
+              src="../static/images/news/n1.png"
+              class="w-14 sm:w-20 md:w-32 h-auto object-cover"
+            />
+            <div class="text-left m-1 p-1 sm:space-y-2">
+              <h1 class="text-[#D45D01] text-[8px] sm:text-xs md:text-sm">
+                Branding
+              </h1>
+              <p class="font-bold text-[10px] sm:text-xs md:text-base">
+                What is branding and why do we need it?
+              </p>
+              <p class="text-[8px] sm:text-xs">
+                On the other hand, we denounce with righteous indignation and...
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-row space-x-1 border-2 border-[#D45D01] rounded-xl"
+          >
+            <img
+              src="../static/images/news/n1.png"
+              class="w-14 sm:w-20 md:w-32 h-auto object-cover"
+            />
+            <div class="text-left m-1 p-1 sm:space-y-2">
+              <h1 class="text-[#D45D01] text-[8px] sm:text-xs md:text-sm">
+                Branding
+              </h1>
+              <p class="font-bold text-[10px] sm:text-xs md:text-base">
+                What is branding and why do we need it?
+              </p>
+              <p class="text-[8px] sm:text-xs">
+                On the other hand, we denounce with righteous indignation and...
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-row space-x-1 border-2 border-[#D45D01] rounded-xl"
+          >
+            <img
+              src="../static/images/news/n1.png"
+              class="w-14 sm:w-20 md:w-32 h-auto object-cover"
+            />
+            <div class="text-left m-1 p-1 sm:space-y-2">
+              <h1 class="text-[#D45D01] text-[8px] sm:text-xs md:text-sm">
+                Branding
+              </h1>
+              <p class="font-bold text-[10px] sm:text-xs md:text-base">
+                What is branding and why do we need it?
+              </p>
+              <p class="text-[8px] sm:text-xs">
+                On the other hand, we denounce with righteous indignation and...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Section-6-->
+    <div class="relative">
+      <!--part-1-->
+      <div class="bg-white text-black z-10">
+        <div class="text-center m-6 md:m-10 p-6 md:p-10">
+          <div class="space-y-4">
+            <p class="text-lg sm:text-xl md:text-4xl font-bold">FAQ's</p>
+            <p class="text-sm sm:text-base md:text-lg">
+              Providing answer to your questions
+            </p>
+          </div>
+          <div class="text-white">
+            <div class="flex flex-col space-y-4 m-4 md:m-8 p-4 md:p-8">
+              <div
+                class="flex justify-between items-center p-2 md:p-4 bg-black rounded-xl max-w-[300px] md:max-w-[500px] mx-auto w-full"
+              >
+                <p class="text-base sm:text-lg md:text-xl">
+                  Do you have specific pricing plans to show
+                </p>
+                <i
+                  class="fa-solid fa-angle-down p-1 md:p-2 bg-[#D45D01] text-black text-xs sm:text:sm rounded-full"
+                ></i>
+              </div>
+              <div
+                class="flex justify-between items-center p-2 md:p-4 bg-black rounded-xl max-w-[300px] md:max-w-[500px] mx-auto w-full"
+              >
+                <p class="text-base sm:text-lg md:text-xl">
+                  How many years of experience do you have?
+                </p>
+                <i
+                  class="fa-solid fa-angle-down p-1 md:p-2 bg-[#D45D01] text-black text-xs sm:text:sm rounded-full"
+                ></i>
+              </div>
+              <div
+                class="flex justify-between items-center p-2 md:p-4 bg-black rounded-xl max-w-[300px] md:max-w-[500px] mx-auto w-full"
+              >
+                <p class="text-base sm:text-lg md:text-xl">
+                  What companies have you worked with?
+                </p>
+                <i
+                  class="fa-solid fa-angle-down p-1 md:p-2 bg-[#D45D01] text-black text-xs sm:text:sm rounded-full"
+                ></i>
+              </div>
+              <div
+                class="flex justify-between items-center p-2 md:p-4 bg-black rounded-xl max-w-[300px] md:max-w-[500px] mx-auto w-full"
+              >
+                <p class="text-base sm:text-lg md:text-xl">
+                  Am I safe leaving my company in your hands?
+                </p>
+                <i
+                  class="fa-solid fa-angle-down p-1 md:p-2 bg-[#D45D01] text-black text-xs sm:text:sm rounded-full"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="m-4 md:m-8 p-4 md:p-8">
+            <textarea
+              placeholder="Ask us what you want to know"
+              class="border-2 border-black rounded-md w-full h-32 resize-none p-3"
+            ></textarea>
+            <div
+              class="flex flex-row justify-between items-center space-x-2 p-2 mb-10"
+            >
+              <p class="text-[#11120499] text-xs sm:text-sm">
+                We will try answer your question via email within 48 hours
+              </p>
+              <button
+                class="text-xs sm:text-sm md:text-base p-2 md:p-3 bg-[#D45D01] rounded-2xl cursor-pointer hover:text-white"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--overlay-->
+      <div
+        class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 sm:w-1/2 rounded-lg z-20"
+      >
+        <div class="m-4 md:m-8 p-4 md:p-8 z-20">
+          <div class="bg-[#1E2008] rounded-xl">
+            <div class="text-white text-center p-2 md:p-4 space-y-4">
+              <p class="text-base sm:text-xl md:text-3xl font-bold">
+                Become part of design revolution
+              </p>
+              <p class="text-xs sm:text-base">
+                Jump on a membership and start requesting designs right away!
+              </p>
+              <button
+                class="text-black text-xs sm:text-sm md:text-base p-2 md:p-3 bg-[#D45D01] rounded-2xl cursor-pointer hover:text-white"
+              >
+                See pricing
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--part-2-->
+      <div class="bg-black m-6 md:m-10 p-6 md:p-10 text-white space-y-4 z-10">
+        <div
+          class="flex justify-between items-center space-x-2 md:space-x-6 mt-32"
+        >
+          <div class="space-y-8">
+            <div class="text-xl sm:text-2xl">
+              <span>Lu</span><span class="text-[#D45D01]">pix</span>
+            </div>
+            <p class="text-xs sm:text-sm w-1/2">
+              Kornix - the leading digital agency based in the UK, working with
+              top-tier clients, from start-ups to enterprises.
+            </p>
+          </div>
+
+          <div class="space-y-2">
+            <div class="space-x-2">
+              <i class="fa-solid fa-phone text-sm"></i>
+              <span class="text-sm">(001) 1231 3435</span>
+            </div>
+
+            <div class="space-x-2">
+              <span class="text-sm"><i class="fa-solid fa-envelope"></i></span>
+              <span class="text-sm">info@ideapeel.com</span>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="text-right">
+          <span class="text-xs">© 2023 shantogfx - All Right Reserved</span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
