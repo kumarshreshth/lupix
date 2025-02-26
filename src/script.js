@@ -41,17 +41,27 @@ function send(id) {
     .send(serviceId, templateId, templateParams)
     .then((response) => {
       console.log('SUCCESS!', response.status, response.text);
-      alert('Email sent successfully!');
       if (id == 0) {
+        document.getElementById('successPopup1').classList.remove('hidden');
+        setTimeout(() => {
+          document.getElementById('successPopup1').classList.add('hidden');
+        }, 3000);
         document.getElementById('form').classList.add('hidden');
         document.querySelector('form').reset();
       } else {
+        document.getElementById('successPopup2').classList.remove('hidden');
+        setTimeout(() => {
+          document.getElementById('successPopup2').classList.add('hidden');
+        }, 3000);
         document.getElementById('message').value = '';
       }
     })
     .catch((error) => {
       console.error('FAILED...', error);
-      alert('Failed to send email. Please try again!');
+      document.getElementById('errorPopup').classList.remove('hidden');
+      setTimeout(() => {
+        document.getElementById('errorPopup').classList.add('hidden');
+      }, 3000);
     });
 }
 
