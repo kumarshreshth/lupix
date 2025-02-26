@@ -14,9 +14,24 @@
       href="./src/output.css"
       rel="stylesheet"
     />
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: 'UmrVycIAFM8ftSJBm',
+        });
+      })();
+    </script>
     <title>Lupix</title>
   </head>
-  <body class="bg-black text-white">
+  <body class="bg-black text-white h-screen">
     <!--Section-1-->
     <!--Navigation bar-->
     <div>
@@ -27,33 +42,33 @@
           class="w-20 h-20 sm:w-20 sm:h-20 md:w-32 md:h-32"
         />
         <div class="flex items-center gap-x-10">
-          <ul class="hidden md:flex gap-x-5">
-            <li
+          <div class="hidden md:flex gap-x-5 scroll-smooth">
+            <a
+              href="#"
               class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] hover:cursor-pointer"
+              >Process</a
             >
-              Process
-            </li>
-            <li
+            <a
+              href="#benefits"
               class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] hover:cursor-pointer"
+              >Benefits</a
             >
-              Benefits
-            </li>
-            <li
+            <a
+              href="#"
               class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] hover:cursor-pointer"
+              >Services</a
             >
-              Services
-            </li>
-            <li
+            <a
+              href="#"
               class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] hover:cursor-pointer"
+              >Portfolio</a
             >
-              Porifolio
-            </li>
-            <li
+            <a
+              href="#faq"
               class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] hover:cursor-pointer"
+              >FAQ</a
             >
-              FAQ
-            </li>
-          </ul>
+          </div>
           <button
             class="hidden md:block p-3 bg-[#D45D01] rounded-2xl text-xl text-black hover:text-white cursor-pointer"
           >
@@ -74,37 +89,40 @@
         class="md:hidden hidden flex-col absolute right-0 top-20 items-center bg-black text-white p-5"
         id="navBar"
       >
-        <ul class="space-y-8">
-          <li
-            class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] cursor-pointer"
+        <div class="space-y-8 scroll-smooth">
+          <a
+            href="#"
+            class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] hover:cursor-pointer"
+            >Process</a
           >
-            Process
-          </li>
-          <li
-            class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] cursor-pointer"
+          <a
+            href="#benefits"
+            class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] hover:cursor-pointer"
+            >Benefits</a
           >
-            Benefits
-          </li>
-          <li
-            class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] cursor-pointer"
+          <a
+            href="#"
+            class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] hover:cursor-pointer"
+            >Services</a
           >
-            Services
-          </li>
-          <li
-            class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] cursor-pointer"
+          <a
+            href="#"
+            class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] hover:cursor-pointer"
+            >Portfolio</a
           >
-            Porifolio
-          </li>
-          <li
-            class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] cursor-pointer"
+          <a
+            href="#faq"
+            class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] hover:cursor-pointer"
+            >FAQ</a
           >
-            FAQ
-          </li>
-        </ul>
+        </div>
       </div>
 
       <!--Heading section-1 -->
-      <div class="text-center text-white m-4 sm:m-6 md:m-8 p-6 sm:p-8 md:p-12">
+      <div
+        class="text-center text-white m-4 sm:m-6 md:m-8 p-6 sm:p-8 md:p-12"
+        data-aos="fade-down"
+      >
         <p
           class="mt-4 sm:mt-6 md:mt-8 m-2 p-2 text-lg sm:text-4xl md:text-7xl max-w-[90%] sm:max-w-3xl mx-auto"
         >
@@ -122,6 +140,7 @@
 
         <button
           class="mt-6 sm:mt-8 md:mt-10 px-6 py-3 sm:px-8 sm:py-4 bg-[#D45D01] rounded-2xl text-xs sm:text-base md:text-lg text-black hover:text-white cursor-pointer"
+          onclick="Booking('')"
         >
           Book A Meeting
         </button>
@@ -140,6 +159,7 @@
       <!--Brands-->
       <div
         class="md:bg-[#222222] m-6 sm:m-10 p-6 sm:p-10 bg-black md:rounded-2xl"
+        data-aos="fade-down"
       >
         <ul
           class="block md:flex justify-center md:justify-between items-center gap-4 space-y-10 md:space-y-0"
@@ -193,7 +213,10 @@
       </div>
 
       <!--Description-1 -->
-      <div class="text-white m-6 sm:m-10 p-3 sm:p-5">
+      <div
+        class="text-white m-6 sm:m-10 p-3 sm:p-5"
+        data-aos="fade-down"
+      >
         <p class="text-[#D45D01] font-medium text-sm sm:text-lg md:text-xl">
           HOW WE WORK
         </p>
@@ -212,13 +235,17 @@
         </div>
         <button
           class="mt-6 sm:mt-8 md:mt-10 px-6 py-3 sm:px-8 sm:py-4 bg-[#D45D01] rounded-2xl text-xs sm:text-base md:text-lg text-black hover:text-white cursor-pointer"
+          onclick="pricing()"
         >
           See Pricing
         </button>
       </div>
 
       <!--Description-2-->
-      <div class="m-6 sm:m-10 p-3 sm:p-5">
+      <div
+        class="m-6 sm:m-10 p-3 sm:p-5"
+        data-aos="fade-down"
+      >
         <ul
           class="block md:flex md:justify-center md:gap-5 space-y-10 md:space-y-0"
         >
@@ -288,7 +315,10 @@
     </div>
 
     <!--Section-2-->
-    <div class="bg-white text-center">
+    <div
+      class="bg-white text-center"
+      data-aos="fade-down"
+    >
       <div class="m-6 md:m-10 p-6 md:p-10">
         <p class="text-black font-bold text-xl sm:text-2xl md:text-4xl">
           Our Beautiful Works
@@ -302,7 +332,10 @@
 
     <!--Section-3-->
     <div class="m-6 md:m-10 p-6 md:p-10">
-      <div class="text-center">
+      <div
+        class="text-center"
+        data-aos="fade-down"
+      >
         <p class="text-[#D45D01] text-base sm:text-lg md:text-xl">
           OUR CAPABILITIES
         </p>
@@ -311,77 +344,91 @@
         </p>
       </div>
       <div
-        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-12 text-center items-center"
+        class="text-center"
+        data-aos="fade-down"
       >
         <div
-          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-12 text-center items-center"
         >
-          Web design & UI
+          <div
+            class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg benefit-element"
+          >
+            Web design & UI
+          </div>
+          <div
+            class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg benefit-element"
+          >
+            Social media visuals
+          </div>
+          <div
+            class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg benefit-element"
+          >
+            Infographics
+          </div>
+          <div
+            class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg benefit-element"
+          >
+            Design system
+          </div>
+          <div
+            class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg benefit-element"
+          >
+            Email design
+          </div>
+          <div
+            class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg benefit-element"
+          >
+            Stationary
+          </div>
+          <div
+            class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg benefit-element"
+          >
+            Icons
+          </div>
+          <div
+            class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg benefit-element"
+          >
+            Packaging & merch
+          </div>
+          <div
+            class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg benefit-element hidden"
+          >
+            Signage
+          </div>
+          <div
+            class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg benefit-element hidden"
+          >
+            Brochures
+          </div>
+          <div
+            class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg benefit-element hidden"
+          >
+            Logo & Branding
+          </div>
+          <div
+            class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg benefit-element hidden"
+          >
+            Digital ads
+          </div>
+          <div
+            class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg benefit-element hidden"
+          >
+            Wireframes
+          </div>
         </div>
-        <div
-          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
+        <button
+          class="mt-6 sm:mt-8 md:mt-10 px-6 py-3 sm:px-8 sm:py-4 bg-[#D45D01] rounded-2xl text-xs sm:text-base md:text-lg text-black hover:text-white cursor-pointer"
+          id="btnl1"
         >
-          Social media visuals
-        </div>
-        <div
-          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
-        >
-          Infographics
-        </div>
-        <div
-          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
-        >
-          Design system
-        </div>
-        <div
-          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
-        >
-          Email design
-        </div>
-        <div
-          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
-        >
-          Stationary
-        </div>
-        <div
-          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
-        >
-          Icons
-        </div>
-        <div
-          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
-        >
-          Packaging & merch
-        </div>
-        <div
-          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
-        >
-          Signage
-        </div>
-        <div
-          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
-        >
-          Brochures
-        </div>
-        <div
-          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
-        >
-          Logo & Branding
-        </div>
-        <div
-          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
-        >
-          Digital ads
-        </div>
-        <div
-          class="text-black bg-[#D45D01] p-4 rounded-xl text-xs sm:text-base md:text-lg"
-        >
-          Wireframes
-        </div>
+          Load More...
+        </button>
       </div>
 
       <!--Description-1-->
-      <div>
+      <div
+        data-aos="fade-down"
+        id="benefits"
+      >
         <p class="text-[#D45D01] mt-20 text-base sm:text-lg md:text-xl">
           BENEFITS
         </p>
@@ -406,7 +453,10 @@
       </div>
 
       <!--Benefits-section-->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mt-20">
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mt-20"
+        data-aos="fade-down"
+      >
         <div class="text-white space-y-4">
           <p class="text-[#D45D01] text-base sm:text-lg md:text-xl">
             <i class="fa-solid fa-infinity"></i>
@@ -506,7 +556,10 @@
     </div>
 
     <!--Section-4-->
-    <div class="bg-white">
+    <div
+      class="bg-white"
+      data-aos="fade-down"
+    >
       <div class="m-6 md:m-10 p-6 md:p-10">
         <div class="text-center text-black mt-10 space-y-10">
           <p class="text-base sm:text-lg md:text-xl">TESTIMONIAL</p>
@@ -589,7 +642,11 @@
     <!--Section-5-->
     <div>
       <!--Heading-->
-      <div class="m-6 md:m-10 p-6 md:p-10">
+      <div
+        class="m-6 md:m-10 p-6 md:p-10"
+        data-aos="fade-down"
+        id="pricingSection"
+      >
         <div class="text-center space-y-8">
           <p class="text-[#D45D01] text-sm sm:text-base md:text-lg">
             CLEAR & SIMPLE PRICING
@@ -605,7 +662,10 @@
       </div>
 
       <!--Pricing Panel-->
-      <div class="m-6 md:m-10 p-6 md:p-10">
+      <div
+        class="m-6 md:m-10 p-6 md:p-10"
+        data-aos="fade-down"
+      >
         <div
           class="flex flex-col md:flex-row space-y-6 md:space-x-3 md:space-y-0"
         >
@@ -625,7 +685,10 @@
             </p>
             <hr class="text-[#D45D01]" />
             <div class="space-y-2">
-              <p class="text-[#D45D01] text-xl sm:text-2xl md:text-4xl">
+              <p
+                class="text-[#D45D01] text-xl sm:text-2xl md:text-4xl"
+                id="p1"
+              >
                 $2,995/m
               </p>
               <p class="text-xs md:text-sm">Pause or cancel anytime</p>
@@ -665,11 +728,13 @@
             <div class="flex flex-col space-y-4">
               <button
                 class="px-6 py-3 sm:px-8 sm:py-4 rounded-xl border-2 border-[#D45D01] text-xs sm:text-base md:text-lg hover:text-[#D45D01] cursor-pointer"
+                onclick="Booking('')"
               >
                 Book a call
               </button>
               <button
                 class="px-6 py-3 sm:px-8 sm:py-4 rounded-xl bg-[#D45D01] text-black text-xs sm:text-base md:text-lg hover:text-white cursor-pointer"
+                onclick="Booking('p1')"
               >
                 Click to buy
               </button>
@@ -692,7 +757,10 @@
             </p>
             <hr class="text-[#D45D01]" />
             <div class="space-y-2">
-              <p class="text-[#D45D01] text-xl sm:text-2xl md:text-4xl">
+              <p
+                class="text-[#D45D01] text-xl sm:text-2xl md:text-4xl"
+                id="p2"
+              >
                 $4,795/m
               </p>
               <p class="text-xs md:text-sm">Pause or cancel anytime</p>
@@ -732,11 +800,13 @@
             <div class="flex flex-col space-y-4">
               <button
                 class="px-6 py-3 sm:px-8 sm:py-4 rounded-xl border-2 border-[#D45D01] text-xs sm:text-base md:text-lg hover:text-[#D45D01] cursor-pointer"
+                onclick="Booking('')"
               >
                 Book a call
               </button>
               <button
                 class="px-6 py-3 sm:px-8 sm:py-4 rounded-xl bg-[#D45D01] text-black text-xs sm:text-base md:text-lg hover:text-white cursor-pointer"
+                onclick="Booking('p2')"
               >
                 Click to buy
               </button>
@@ -758,7 +828,10 @@
             </p>
             <hr class="text-[#D45D01]" />
             <div class="space-y-2">
-              <p class="text-[#D45D01] text-xl sm:text-2xl md:text-4xl">
+              <p
+                class="text-[#D45D01] text-xl sm:text-2xl md:text-4xl"
+                id="p3"
+              >
                 $890/m
               </p>
               <p class="text-xs md:text-sm">Paid per weekly</p>
@@ -798,11 +871,13 @@
             <div class="flex flex-col space-y-4">
               <button
                 class="px-6 py-3 sm:px-8 sm:py-4 rounded-xl border-2 border-[#D45D01] text-xs sm:text-base md:text-lg hover:text-[#D45D01] cursor-pointer"
+                onclick="Booking('')"
               >
                 Book a call
               </button>
               <button
                 class="px-6 py-3 sm:px-8 sm:py-4 rounded-xl bg-[#D45D01] text-black text-xs sm:text-base md:text-lg hover:text-white cursor-pointer"
+                onclick="Booking('p3')"
               >
                 Click to buy
               </button>
@@ -812,7 +887,7 @@
       </div>
 
       <!--News Blogs-->
-      <div>
+      <div data-aos="fade-down">
         <div class="m-6 md:m-10 p-6 md:p-10 text-center space-y-4">
           <p class="text-[#D45D01] text-sm sm:text-base md:text-lg">BLOGS</p>
           <p class="text-xl sm:text-2xl md:text-4xl font-bold">
@@ -823,127 +898,141 @@
           </p>
         </div>
 
-        <div
-          class="grid grid-cols-1 lg:grid-cols-2 gap-2 m-6 md:m-10 p-6 md:p-10"
-        >
+        <div class="text-center">
           <div
-            class="flex flex-row space-x-1 border-2 border-[#D45D01] rounded-xl"
+            class="grid grid-cols-1 lg:grid-cols-2 gap-2 m-6 md:m-10 p-6 md:p-10"
           >
-            <img
-              src="./static/images/news/n1.png"
-              class="w-14 sm:w-20 md:w-32 h-auto object-cover"
-            />
-            <div class="text-left m-1 p-1 sm:space-y-2">
-              <h1 class="text-[#D45D01] text-[8px] sm:text-xs md:text-sm">
-                Branding
-              </h1>
-              <p class="font-bold text-[10px] sm:text-xs md:text-base">
-                What is branding and why do we need it?
-              </p>
-              <p class="text-[8px] sm:text-xs">
-                On the other hand, we denounce with righteous indignation and...
-              </p>
+            <div
+              class="flex flex-row space-x-1 border-2 border-[#D45D01] rounded-xl news-element"
+            >
+              <img
+                src="./static/images/news/n1.png"
+                class="w-14 sm:w-20 md:w-32 h-auto object-cover"
+              />
+              <div class="text-left m-1 p-1 sm:space-y-2">
+                <h1 class="text-[#D45D01] text-[8px] sm:text-xs md:text-sm">
+                  Branding
+                </h1>
+                <p class="font-bold text-[10px] sm:text-xs md:text-base">
+                  What is branding and why do we need it?
+                </p>
+                <p class="text-[8px] sm:text-xs">
+                  On the other hand, we denounce with righteous indignation
+                  and...
+                </p>
+              </div>
             </div>
-          </div>
-          <div
-            class="flex flex-row space-x-1 border-2 border-[#D45D01] rounded-xl"
-          >
-            <img
-              src="./static/images/news/n1.png"
-              class="w-14 sm:w-20 md:w-32 h-auto object-cover"
-            />
-            <div class="text-left m-1 p-1 sm:space-y-2">
-              <h1 class="text-[#D45D01] text-[8px] sm:text-xs md:text-sm">
-                Branding
-              </h1>
-              <p class="font-bold text-[10px] sm:text-xs md:text-base">
-                What is branding and why do we need it?
-              </p>
-              <p class="text-[8px] sm:text-xs">
-                On the other hand, we denounce with righteous indignation and...
-              </p>
+            <div
+              class="flex flex-row space-x-1 border-2 border-[#D45D01] rounded-xl news-element"
+            >
+              <img
+                src="./static/images/news/n1.png"
+                class="w-14 sm:w-20 md:w-32 h-auto object-cover"
+              />
+              <div class="text-left m-1 p-1 sm:space-y-2">
+                <h1 class="text-[#D45D01] text-[8px] sm:text-xs md:text-sm">
+                  Branding
+                </h1>
+                <p class="font-bold text-[10px] sm:text-xs md:text-base">
+                  What is branding and why do we need it?
+                </p>
+                <p class="text-[8px] sm:text-xs">
+                  On the other hand, we denounce with righteous indignation
+                  and...
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div
-            class="flex flex-row space-x-1 border-2 border-[#D45D01] rounded-xl"
-          >
-            <img
-              src="./static/images/news/n1.png"
-              class="w-14 sm:w-20 md:w-32 h-auto object-cover"
-            />
-            <div class="text-left m-1 p-1 sm:space-y-2">
-              <h1 class="text-[#D45D01] text-[8px] sm:text-xs md:text-sm">
-                Branding
-              </h1>
-              <p class="font-bold text-[10px] sm:text-xs md:text-base">
-                What is branding and why do we need it?
-              </p>
-              <p class="text-[8px] sm:text-xs">
-                On the other hand, we denounce with righteous indignation and...
-              </p>
+            <div
+              class="flex flex-row space-x-1 border-2 border-[#D45D01] rounded-xl news-element"
+            >
+              <img
+                src="./static/images/news/n1.png"
+                class="w-14 sm:w-20 md:w-32 h-auto object-cover"
+              />
+              <div class="text-left m-1 p-1 sm:space-y-2">
+                <h1 class="text-[#D45D01] text-[8px] sm:text-xs md:text-sm">
+                  Branding
+                </h1>
+                <p class="font-bold text-[10px] sm:text-xs md:text-base">
+                  What is branding and why do we need it?
+                </p>
+                <p class="text-[8px] sm:text-xs">
+                  On the other hand, we denounce with righteous indignation
+                  and...
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div
-            class="flex flex-row space-x-1 border-2 border-[#D45D01] rounded-xl"
-          >
-            <img
-              src="./static/images/news/n1.png"
-              class="w-14 sm:w-20 md:w-32 h-auto object-cover"
-            />
-            <div class="text-left m-1 p-1 sm:space-y-2">
-              <h1 class="text-[#D45D01] text-[8px] sm:text-xs md:text-sm">
-                Branding
-              </h1>
-              <p class="font-bold text-[10px] sm:text-xs md:text-base">
-                What is branding and why do we need it?
-              </p>
-              <p class="text-[8px] sm:text-xs">
-                On the other hand, we denounce with righteous indignation and...
-              </p>
+            <div
+              class="flex flex-row space-x-1 border-2 border-[#D45D01] rounded-xl news-element"
+            >
+              <img
+                src="./static/images/news/n1.png"
+                class="w-14 sm:w-20 md:w-32 h-auto object-cover"
+              />
+              <div class="text-left m-1 p-1 sm:space-y-2">
+                <h1 class="text-[#D45D01] text-[8px] sm:text-xs md:text-sm">
+                  Branding
+                </h1>
+                <p class="font-bold text-[10px] sm:text-xs md:text-base">
+                  What is branding and why do we need it?
+                </p>
+                <p class="text-[8px] sm:text-xs">
+                  On the other hand, we denounce with righteous indignation
+                  and...
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div
-            class="flex flex-row space-x-1 border-2 border-[#D45D01] rounded-xl"
-          >
-            <img
-              src="./static/images/news/n1.png"
-              class="w-14 sm:w-20 md:w-32 h-auto object-cover"
-            />
-            <div class="text-left m-1 p-1 sm:space-y-2">
-              <h1 class="text-[#D45D01] text-[8px] sm:text-xs md:text-sm">
-                Branding
-              </h1>
-              <p class="font-bold text-[10px] sm:text-xs md:text-base">
-                What is branding and why do we need it?
-              </p>
-              <p class="text-[8px] sm:text-xs">
-                On the other hand, we denounce with righteous indignation and...
-              </p>
+            <div
+              class="flex flex-row space-x-1 border-2 border-[#D45D01] rounded-xl hidden news-element"
+            >
+              <img
+                src="./static/images/news/n1.png"
+                class="w-14 sm:w-20 md:w-32 h-auto object-cover"
+              />
+              <div class="text-left m-1 p-1 sm:space-y-2">
+                <h1 class="text-[#D45D01] text-[8px] sm:text-xs md:text-sm">
+                  Branding
+                </h1>
+                <p class="font-bold text-[10px] sm:text-xs md:text-base">
+                  What is branding and why do we need it?
+                </p>
+                <p class="text-[8px] sm:text-xs">
+                  On the other hand, we denounce with righteous indignation
+                  and...
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div
-            class="flex flex-row space-x-1 border-2 border-[#D45D01] rounded-xl"
-          >
-            <img
-              src="./static/images/news/n1.png"
-              class="w-14 sm:w-20 md:w-32 h-auto object-cover"
-            />
-            <div class="text-left m-1 p-1 sm:space-y-2">
-              <h1 class="text-[#D45D01] text-[8px] sm:text-xs md:text-sm">
-                Branding
-              </h1>
-              <p class="font-bold text-[10px] sm:text-xs md:text-base">
-                What is branding and why do we need it?
-              </p>
-              <p class="text-[8px] sm:text-xs">
-                On the other hand, we denounce with righteous indignation and...
-              </p>
+            <div
+              class="flex flex-row space-x-1 border-2 border-[#D45D01] rounded-xl hidden news-element"
+            >
+              <img
+                src="./static/images/news/n1.png"
+                class="w-14 sm:w-20 md:w-32 h-auto object-cover"
+              />
+              <div class="text-left m-1 p-1 sm:space-y-2">
+                <h1 class="text-[#D45D01] text-[8px] sm:text-xs md:text-sm">
+                  Branding
+                </h1>
+                <p class="font-bold text-[10px] sm:text-xs md:text-base">
+                  What is branding and why do we need it?
+                </p>
+                <p class="text-[8px] sm:text-xs">
+                  On the other hand, we denounce with righteous indignation
+                  and...
+                </p>
+              </div>
             </div>
           </div>
+          <button
+            class="mt-6 sm:mt-8 md:mt-10 px-6 py-3 sm:px-8 sm:py-4 bg-[#D45D01] rounded-2xl text-xs sm:text-base md:text-lg text-black hover:text-white cursor-pointer"
+            id="btnl2"
+          >
+            Load More..
+          </button>
         </div>
       </div>
     </div>
@@ -953,60 +1042,132 @@
       <!--part-1-->
       <div class="bg-white text-black z-10">
         <div class="text-center m-6 md:m-10 p-6 md:p-10">
-          <div class="space-y-4">
+          <div
+            class="space-y-4"
+            data-aos="fade-down"
+            id="faq"
+          >
             <p class="text-lg sm:text-xl md:text-4xl font-bold">FAQ's</p>
             <p class="text-sm sm:text-base md:text-lg">
               Providing answer to your questions
             </p>
           </div>
-          <div class="text-white">
-            <div class="flex flex-col space-y-4 m-4 md:m-8 p-4 md:p-8">
+          <div
+            class="text-white"
+            data-aos="fade-down"
+          >
+            <div
+              class="flex flex-col space-y-4 m-4 sm:m-6 md:m-8 p-4 sm:p-6 md:p-8"
+            >
+              <!-- FAQ Item 1 -->
               <div
-                class="flex justify-between items-center p-2 md:p-4 bg-black rounded-xl max-w-[300px] md:max-w-[500px] mx-auto w-full"
+                class="bg-black rounded-xl max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto w-full"
               >
-                <p class="text-base sm:text-lg md:text-xl">
-                  Do you have specific pricing plans to show
+                <div
+                  class="flex justify-between items-center p-3 sm:p-4 cursor-pointer"
+                  onclick="toggleContent('a1','para1')"
+                >
+                  <p class="text-sm sm:text-base md:text-lg">
+                    Do you have specific pricing plans to show?
+                  </p>
+                  <i
+                    class="fa-solid fa-angle-down p-2 bg-[#D45D01] text-black text-xs sm:text-sm rounded-full transition-transform duration-300"
+                    id="a1"
+                  ></i>
+                </div>
+                <p
+                  class="m-3 p-3 hidden text-gray-500 text-sm sm:text-base transition-opacity duration-300"
+                  id="para1"
+                >
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Earum tempora ratione corporis, voluptatum maxime ex.
                 </p>
-                <i
-                  class="fa-solid fa-angle-down p-1 md:p-2 bg-[#D45D01] text-black text-xs sm:text:sm rounded-full"
-                ></i>
               </div>
+
+              <!-- FAQ Item 2 -->
               <div
-                class="flex justify-between items-center p-2 md:p-4 bg-black rounded-xl max-w-[300px] md:max-w-[500px] mx-auto w-full"
+                class="bg-black rounded-xl max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto w-full"
               >
-                <p class="text-base sm:text-lg md:text-xl">
-                  How many years of experience do you have?
+                <div
+                  class="flex justify-between items-center p-3 sm:p-4 cursor-pointer"
+                  onclick="toggleContent('a2','para2')"
+                >
+                  <p class="text-sm sm:text-base md:text-lg">
+                    How many years of experience do you have?
+                  </p>
+                  <i
+                    class="fa-solid fa-angle-down p-2 bg-[#D45D01] text-black text-xs sm:text-sm rounded-full transition-transform duration-300"
+                    id="a2"
+                  ></i>
+                </div>
+                <p
+                  class="m-3 p-3 hidden text-gray-500 text-sm sm:text-base transition-opacity duration-300"
+                  id="para2"
+                >
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Earum tempora ratione corporis, voluptatum maxime ex.
                 </p>
-                <i
-                  class="fa-solid fa-angle-down p-1 md:p-2 bg-[#D45D01] text-black text-xs sm:text:sm rounded-full"
-                ></i>
               </div>
+
+              <!-- FAQ Item 3 -->
               <div
-                class="flex justify-between items-center p-2 md:p-4 bg-black rounded-xl max-w-[300px] md:max-w-[500px] mx-auto w-full"
+                class="bg-black rounded-xl max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto w-full"
               >
-                <p class="text-base sm:text-lg md:text-xl">
-                  What companies have you worked with?
+                <div
+                  class="flex justify-between items-center p-3 sm:p-4 cursor-pointer"
+                  onclick="toggleContent('a3','para3')"
+                >
+                  <p class="text-sm sm:text-base md:text-lg">
+                    What companies have you worked with?
+                  </p>
+                  <i
+                    class="fa-solid fa-angle-down p-2 bg-[#D45D01] text-black text-xs sm:text-sm rounded-full transition-transform duration-300"
+                    id="a3"
+                  ></i>
+                </div>
+                <p
+                  class="m-3 p-3 hidden text-gray-500 text-sm sm:text-base transition-opacity duration-300"
+                  id="para3"
+                >
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Earum tempora ratione corporis, voluptatum maxime ex.
                 </p>
-                <i
-                  class="fa-solid fa-angle-down p-1 md:p-2 bg-[#D45D01] text-black text-xs sm:text:sm rounded-full"
-                ></i>
               </div>
+
+              <!-- FAQ Item 4 -->
               <div
-                class="flex justify-between items-center p-2 md:p-4 bg-black rounded-xl max-w-[300px] md:max-w-[500px] mx-auto w-full"
+                class="bg-black rounded-xl max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto w-full"
               >
-                <p class="text-base sm:text-lg md:text-xl">
-                  Am I safe leaving my company in your hands?
+                <div
+                  class="flex justify-between items-center p-3 sm:p-4 cursor-pointer"
+                  onclick="toggleContent('a4','para4')"
+                >
+                  <p class="text-sm sm:text-base md:text-lg">
+                    Am I safe leaving my company in your hands?
+                  </p>
+                  <i
+                    class="fa-solid fa-angle-down p-2 bg-[#D45D01] text-black text-xs sm:text-sm rounded-full transition-transform duration-300"
+                    id="a4"
+                  ></i>
+                </div>
+                <p
+                  class="m-3 p-3 hidden text-gray-500 text-sm sm:text-base transition-opacity duration-300"
+                  id="para4"
+                >
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Earum tempora ratione corporis, voluptatum maxime ex.
                 </p>
-                <i
-                  class="fa-solid fa-angle-down p-1 md:p-2 bg-[#D45D01] text-black text-xs sm:text:sm rounded-full"
-                ></i>
               </div>
             </div>
           </div>
-          <div class="m-4 md:m-8 p-4 md:p-8">
+          <div
+            class="m-4 md:m-8 p-4 md:p-8"
+            data-aos="fade-down"
+          >
             <textarea
-              placeholder="Ask us what you want to know"
+              placeholder="Ask us what you want to know with your emailId"
               class="border-2 border-black rounded-md w-full h-32 resize-none p-3"
+              id="message"
             ></textarea>
             <div
               class="flex flex-row justify-between items-center space-x-2 p-2 mb-10"
@@ -1016,6 +1177,8 @@
               </p>
               <button
                 class="text-xs sm:text-sm md:text-base p-2 md:p-3 bg-[#D45D01] rounded-2xl cursor-pointer hover:text-white"
+                type="button"
+                onclick="send(1)"
               >
                 Send
               </button>
@@ -1027,6 +1190,7 @@
       <!--overlay-->
       <div
         class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 sm:w-1/2 rounded-lg z-20"
+        data-aos="fade-down"
       >
         <div class="m-4 md:m-8 p-4 md:p-8 z-20">
           <div class="bg-[#1E2008] rounded-xl">
@@ -1039,6 +1203,7 @@
               </p>
               <button
                 class="text-black text-xs sm:text-sm md:text-base p-2 md:p-3 bg-[#D45D01] rounded-2xl cursor-pointer hover:text-white"
+                onclick="pricing()"
               >
                 See pricing
               </button>
@@ -1048,7 +1213,10 @@
       </div>
 
       <!--part-2-->
-      <div class="bg-black m-6 md:m-10 p-6 md:p-10 text-white space-y-4 z-10">
+      <div
+        class="bg-black m-6 md:m-10 p-6 md:p-10 text-white space-y-4 z-10"
+        data-aos="fade-down"
+      >
         <div
           class="flex justify-between items-center space-x-2 md:space-x-6 mt-32"
         >
@@ -1082,6 +1250,113 @@
         </div>
       </div>
     </div>
+
+    <!--Form-->
+    <div
+      class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-10 hidden p-4 sm:p-6"
+      id="form"
+    >
+      <form
+        class="bg-black p-6 sm:p-8 rounded-lg shadow-lg w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
+      >
+        <span
+          class="absolute top-2 right-2 text-gray-500 text-2xl font-bold cursor-pointer"
+          onclick="Booking()"
+          >&times;</span
+        >
+
+        <div class="mb-4">
+          <label
+            for="name"
+            class="block text-white font-medium"
+            >Name:</label
+          >
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter your name"
+            class="w-full p-2 sm:p-3 text-gray-400 border border-white rounded-md focus:outline-none focus:border-[#D45D01]"
+            required
+          />
+        </div>
+
+        <div class="mb-4">
+          <label
+            for="email"
+            class="block text-white font-medium"
+            >Email:</label
+          >
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            class="w-full p-2 sm:p-3 text-gray-400 border border-white rounded-md focus:outline-none focus:border-[#D45D01]"
+            required
+          />
+        </div>
+
+        <div class="mb-4">
+          <label
+            for="phone"
+            class="block text-white font-medium"
+            >Phone Number:</label
+          >
+          <input
+            id="phone"
+            type="tel"
+            placeholder="Enter your phone"
+            class="w-full p-2 sm:p-3 text-gray-400 border border-white rounded-md focus:outline-none focus:border-[#D45D01]"
+            required
+          />
+        </div>
+
+        <div class="mb-4">
+          <label
+            for="price"
+            class="block text-white font-medium"
+            >Pricing Option:</label
+          >
+          <select
+            id="dropdownMenu"
+            class="text-black bg-white w-full p-2 sm:p-3 border border-white rounded-md focus:outline-none focus:border-[#D45D01] cursor-not-allowed opacity-70"
+            disabled
+            required
+          >
+            <option value="$2,995/m">$2,995/m</option>
+            <option value="$4,795/m">$4,795/m</option>
+            <option value="$890/m">$890/m</option>
+          </select>
+        </div>
+
+        <div class="mb-4">
+          <label
+            for="description"
+            class="block text-white font-medium"
+            >Short Description for Requirement</label
+          >
+          <textarea
+            id="description"
+            class="w-full p-2 sm:p-3 text-black bg-white border border-white rounded-md focus:outline-none focus:border-[#D45D01]"
+            required
+          ></textarea>
+        </div>
+
+        <button
+          class="mt-4 sm:mt-6 w-full px-4 py-2 sm:px-6 sm:py-3 bg-[#D45D01] rounded-xl text-sm sm:text-base text-black hover:text-white cursor-pointer"
+          type="button"
+          onclick="send(0)"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./src/script.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 1500,
+    });
+  </script>
 </html>
