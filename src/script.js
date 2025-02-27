@@ -1,8 +1,7 @@
+//FAQ toggle function
 function toggleContent(arrowId, paraId) {
-  // Toggle the paragraph visibility
   document.getElementById(paraId).classList.toggle('hidden');
 
-  // Toggle the icon
   let icon = document.getElementById(arrowId);
   if (icon.classList.contains('fa-angle-down')) {
     icon.classList.remove('fa-angle-down');
@@ -13,6 +12,7 @@ function toggleContent(arrowId, paraId) {
   }
 }
 
+//email function
 function send(id) {
   let templateParams;
   let serviceId;
@@ -65,17 +65,20 @@ function send(id) {
     });
 }
 
+//navigation bar click function for mobile view
 function navBarClick() {
   const menu = document.getElementById('navBar');
   menu.classList.toggle('hidden');
 }
 
+//functionality of See pricing function
 function pricing() {
   document
     .getElementById('pricingSection')
     .scrollIntoView({ behavior: 'smooth' });
 }
 
+//function of booking buttons
 function Booking(id) {
   const form = document.getElementById('form');
   const dropdown = document.getElementById('dropdownMenu');
@@ -107,6 +110,7 @@ function Booking(id) {
   }
 }
 
+//load more buttons
 document.addEventListener('DOMContentLoaded', function () {
   const buttons = [
     {
@@ -142,6 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+//functionality of carsouel
 const slides = document.querySelectorAll('.carousel-item');
 let currentIndex = 0;
 
