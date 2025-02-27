@@ -54,7 +54,7 @@
               >Benefits</a
             >
             <a
-              href="#"
+              href="#capabilites"
               class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] hover:cursor-pointer"
               >Services</a
             >
@@ -71,6 +71,8 @@
           </div>
           <button
             class="hidden md:block p-3 bg-[#D45D01] rounded-2xl text-xl text-black hover:text-white cursor-pointer"
+            type="button"
+            onclick="Booking('')"
           >
             Get Started
           </button>
@@ -101,7 +103,7 @@
             >Benefits</a
           >
           <a
-            href="#"
+            href="#capabilites"
             class="text-xs sm:text-lg md:text-xl hover:text-[#D45D01] hover:cursor-pointer"
             >Services</a
           >
@@ -345,6 +347,7 @@
       <div
         class="text-center"
         data-aos="fade-down"
+        id="capabilites"
       >
         <p class="text-[#D45D01] text-base sm:text-lg md:text-xl">
           OUR CAPABILITIES
@@ -649,13 +652,13 @@
           <!-- Controls -->
           <button
             id="prev"
-            class="absolute top-1/2 left-2 sm:left-4 transform -translate-y-1/2 text-lg sm:text-2xl text-black bg-white p-2 sm:p-3 rounded-full shadow-md w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center"
+            class="absolute top-1/2 left-2 sm:left-4 transform -translate-y-1/2 text-lg sm:text-2xl text-black bg-white p-2 sm:p-3 rounded-full shadow-md w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center cursor-pointer"
           >
             <i class="fas fa-chevron-left"></i>
           </button>
           <button
             id="next"
-            class="absolute top-1/2 right-2 sm:right-4 transform -translate-y-1/2 text-lg sm:text-2xl text-black bg-white p-2 sm:p-3 rounded-full shadow-md w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center"
+            class="absolute top-1/2 right-2 sm:right-4 transform -translate-y-1/2 text-lg sm:text-2xl text-black bg-white p-2 sm:p-3 rounded-full shadow-md w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center cursor-pointer"
           >
             <i class="fas fa-chevron-right"></i>
           </button>
@@ -1277,7 +1280,7 @@
 
     <!--Form-->
     <div
-      class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-10 hidden p-4 sm:p-6"
+      class="fixed inset-0 bg-black opacity-90 flex items-center justify-center z-10 hidden p-4 sm:p-6"
       id="form"
     >
       <form
